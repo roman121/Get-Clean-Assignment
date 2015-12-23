@@ -22,3 +22,16 @@ installed previously. This section checks if it is installed, if not it install 
  
  Finally, Merges the training and the test sets to create one data set and Create independent tidy data set with the average of each variable for each activity and each subject.
 
+
+Final Summary 
+ How run_analysis.R implements the above steps:
+
+1) Require reshape2 and data.table libraries
+2) Load both test and train data set
+3) Load the features and activity labels
+4) Extract only mean and standard deviation column names and data
+5) Process the data. There are two parts processing test and train data respectively
+6) Merge data set
+7) Find the average
+8) Write the data in a txt file
+
